@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { increment, decrement, multiply } from './redux/counter/counterSlice'
 import './App.css'
 import PasswordInupt from './components/PasswordInupt'
+import ConnectedTodoApp from './components/TodoApp'
 
 function App() {
   const count = useSelector((state) => state.counter.value)
@@ -17,6 +18,7 @@ function App() {
       <div>
         <PasswordInupt />
       </div>
+      <ConnectedTodoApp name="John" />
     </>
     
   )
